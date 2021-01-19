@@ -102,3 +102,30 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+
+
+    /*Heder styles start */
+.header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    
+
+}
+
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item{
+
+}
