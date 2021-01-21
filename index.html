@@ -58,7 +58,7 @@
         <!-- Intro start -->     
         <section class="intro">
             .wraaper
-            <div class="intro__contein">
+            <div class="intro__conteiner">
                 <h1 class="inrto__title">
                     OXYGEN
                 </h1>
@@ -75,12 +75,12 @@
         <!-- About start -->
         <section class="about">
             <div class="wrapper">
-                <div class="about__contein">
+                <div class="about__conteiner">
                     <h1 class="about__title title">
                         About Us
                     </h1>
                     <div class="about__subtitle">
-                        <p >
+                        <p class="about__subtitle-first" >
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium commodi totam culpa, dolorum asperiores iusto quidem, nesciunt hic eaque blanditiis enim, id maiores nam nobis dignissimos aliquam ad minus nisi. In, fuga blanditiis non cum cupiditate dolore, accusantium odio doloremque quibusdam dignissimos nemo sed nisi, similique, mollitia et! Autem laborum sint tenetur, earum facere veniam?    
                         </p>
                         <p>
@@ -96,17 +96,24 @@
         <section class="expertise">
             <div class="wrapper">
                <div class="expertise__title title">
-                <h1>
-                    Our Expertise
-                </h1>
+                    <h1>
+                        Our Expertise
+                    </h1>
+                </div>
                 <div class="expertise__content">
-                    <div class="expertise__content-items">
-                        <div class="expertise__content-item">BRANDING</div>
-                        <div class="expertise__content-item">DESIGN</div>
-                        <div class="expertise__content-item">DEVELOPMENT</div>
+                    <div class="expertise__content-items">      
+                        <progress max="100" value="90" id="branding"></progress>
+                        <label class="first__chaild-branding" for="branding">BRANDING</label>
+                        <label for="branding">90%</label>
+                        <progress max="100" value="80" id="desing"></progress>
+                        <label class="first__chaild-desing" for="desing">DESIGN</label>
+                        <label for="desing">80%</label>
+                        <progress max="100" value="85" id="development"></progress>
+                        <label class="first__chaild-development" for="development">DEVELOPMENT</label>
+                        <label for="development">85%</label>
                     </div>
                     <div class="expertise__text">
-                        <p>
+                        <p class="expertise__text-first">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium commodi totam culpa, dolorum asperiores iusto quidem, nesciunt hic eaque blanditiis enim, id maiores nam nobis dignissimos aliquam ad minus nisi.
                         </p>
                         <p>
@@ -114,7 +121,6 @@
                         </p>
                     </div>
                 </div>
-               </div>
                <div class="expertise__items">
 
                     <div class="expertise__item">
@@ -156,6 +162,8 @@
             </div>
         </section>
         <!-- Expertise end -->
+
+        <!-- Features start -->
         <section class="features">
             <div class="features__wrapper">
                 <div class="features__inner">
@@ -173,6 +181,102 @@
                 </div>
             </div>
         </section>
+        <!-- Features end -->
+
+        <!-- Portfolio start -->
+        <section class="portfolio">
+            <div class="wrapper">
+                <div class="porfolio__title">
+                    Portfolio
+                </div>
+                 <nav class="portfolio__nav">
+                     <ul class="portfolio__list">
+                        <li class="portfolio__item">
+                            <a href="#!" class="portfolio__link">ALL</a>
+                        </li>
+                        <ul class="portfolio__list">
+                            <li class="portfolio__item">
+                                <a href="#!" class="portfolio__link">BRANDING</a>
+                            </li>
+                         </ul>
+                         <ul class="portfolio__list">
+                            <li class="portfolio__item">
+                                <a href="#!" class="portfolio__link"></a>
+                            </li>
+                         </ul>
+                         <ul class="portfolio__list">
+                            <li class="portfolio__item">
+                                <a href="#!" class="portfolio__link">PHOTOGRAPHY </a>
+                            </li>
+                         </ul>
+                         <ul class="portfolio__list">
+                            <li class="portfolio__item">
+                                <a href="#!" class="portfolio__link">BRANDING</a>
+                            </li>
+                         </ul>
+                         <ul class="portfolio__list">
+                            <li class="portfolio__item">
+                                <a href="#!" class="portfolio__link">ILLUSTRATION</a>
+                            </li>
+                         </ul>
+                     </ul>
+                 </nav>   
+            </div>
+            <div class="portfolio__items">
+                <div class="portfolio__imeg">
+                    <div class="portfolio__title">OCCA CUPIDATAT</div>
+                    <div class="portfolio__subtitle">DESIGN</div>
+                </div>
+                <div class="portfolio__imeg">
+                    <div class="portfolio__title">OCCA CUPIDATAT</div>
+                    <div class="portfolio__subtitle">DESIGN</div>
+                </div>
+                <div class="portfolio__imeg">
+                    <div class="portfolio__title">OCCA CUPIDATAT</div>
+                    <div class="portfolio__subtitle">DESIGN</div>
+                </div>
+                <div class="portfolio__imeg">
+                    <div class="portfolio__title">OCCA CUPIDATAT</div>
+                    <div class="portfolio__subtitle">DESIGN</div>
+                </div>
+                <div class="portfolio__imeg">
+                    <div class="portfolio__title">OCCA CUPIDATAT</div>
+                    <div class="portfolio__subtitle">DESIGN</div>
+                </div>
+                <div class="portfolio__imeg">
+                    <div class="portfolio__title">OCCA CUPIDATAT</div>
+                    <div class="portfolio__subtitle">DESIGN</div>
+                </div>
+                <div class="portfolio__imeg">
+                    <div class="portfolio__title">OCCA CUPIDATAT</div>
+                    <div class="portfolio__subtitle">DESIGN</div>
+                </div>
+                <div class="portfolio__imeg">
+                    <div class="portfolio__title">OCCA CUPIDATAT</div>
+                    <div class="portfolio__subtitle">DESIGN</div>
+                </div>
+                <div class="portfolio__imeg">
+                    <div class="portfolio__title">OCCA CUPIDATAT</div>
+                    <div class="portfolio__subtitle">DESIGN</div>
+                </div>
+            </div>
+            <button class="portfolio__button">VIEW MORE PROJECTS</button>
+        </section>
+        <!-- Portfolio end -->
+
+
+        <!-- Video start -->
+        <section class="video">
+            <div class="video__quotes">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>        
+            <div class="quotes__quotes-autor">
+                Gilbert Hammond
+            </div>
+            <video class="video__content" src=""></video>
+        </section>
+
+        <!-- Video end -->
     </mein>
     <!-- Mein end -->
 
