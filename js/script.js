@@ -1,0 +1,15 @@
+$(document).ready(function(){
+    $('.slider').slick({
+        arrows:true,
+        dots:true,
+        adaptiveHeight:true,
+        slidesToShow:1,
+        slidesToScroll:1,
+        speed:1000,
+        autoplay:true,
+        autoplaySpeed:6000,
+        pauseOnFocus:true,
+        pauseOnHover:true,
+        pauseOnDotsHocer:true,
+    });
+});
