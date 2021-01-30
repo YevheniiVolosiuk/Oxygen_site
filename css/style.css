@@ -190,7 +190,8 @@ img{
 
 
     /*Intro styles start */
-.intro{  
+.intro{
+    position: relative;  
     height: 100vh;
     background:url(../img/intro-bg.jpg) no-repeat center;
     background-size: cover;
@@ -225,8 +226,9 @@ img{
 }
 
 .intro__ico-scrol{
+    position: absolute;
+    bottom: 0;
     padding-bottom: 62px; 
-    margin-top: 180px;
 }
 
     /*Intro styles end */
@@ -415,16 +417,18 @@ img{
 .features__img{
     width: 100%;
     height: 100%;
+    
 }
 
 .features__inner{
     grid-column: span 6;
-    align-self: center;
-    padding: 101px 135px 180px 130px;
+    align-self: center;  
 }
 
 .features__wrapper{
-    max-width: 440px;
+    max-width: 590px;
+    margin: 0 auto;
+    padding: 101px 10px 180px 10px;
 }
 
 .features__title{
@@ -763,7 +767,7 @@ img{
 }
 
 .slider__item{
-    padding: 307px 0 325px 0 ;
+    padding: 150px 0 150px 0 ;
 }
 
 .slider__item-title{
@@ -798,7 +802,7 @@ img{
 .team__items{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-column: 30px;
+    column-gap: 30px;
     padding-bottom: 165px;
 }
 
@@ -836,7 +840,7 @@ img{
 .pricing__card{
     position: relative;
     grid-column: span 4;
-    padding: 24px 103px 53px 103px;
+    padding: 24px 10px 53px 10px;
     text-align: center;
     background: #FFFFFF;
 }
@@ -853,7 +857,8 @@ img{
 }
 
 
-.pricing__card-rate{
+.pricing__card-rate{ 
+    position: relative;
     margin-top: 36px;
     font-weight: 300;
     font-size: 80px;
@@ -868,7 +873,10 @@ img{
     color: #242121;
 }
 
-.pricing__card-rate::before{  
+.pricing__card-rate::before{
+    position: absolute;
+    top: 14%;
+    left: 21%;  
     content: '$';
     font-weight: 300;
     font-size: 40px;
@@ -920,8 +928,10 @@ img{
 }
 
 .contacts__wrapper{
+    width: 75%;
+    margin: 0 auto;
     grid-column: span 6;
-    padding: 145px 101px 162px 135px;
+    padding: 145px 10px 162px 10px;
 }
 
 .contacts__location{
@@ -1003,21 +1013,21 @@ img{
 }
 
 .footer__content{
-    padding: 110px 374px 60px 374px;
+    padding: 110px 10px 60px 10px;
        
 }
 
 .footer--line::after{
     content: '';
     display: block;
-    width: 25%;
+    width: 12%;
     border: 2px solid #FCBB08;
     margin-top: 24px;
     
 }
 .footer__social{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 65px 0 0 0;
 }
@@ -1037,6 +1047,7 @@ img{
 }
 
 .footer__social-link{
+    margin-right: 25px;
    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
@@ -1047,6 +1058,9 @@ img{
     color: #FFFFFF;
 }
 
+.footer__social-link:last-child{
+    margin-right: 0;
+}
 .footer__social-link::after{
     content: '';
     display: block;
@@ -1091,7 +1105,7 @@ img{
 }
 
 .footer__year{
-    padding: 42px 657px;
+    padding: 42px 10px 42px 10px;
     text-align: center;
     background: #2A2C2B;
     font-size: 12px;
@@ -1102,3 +1116,132 @@ img{
 
 
     /*Mein styles end */
+
+@media  screen and ( max-width: 1024px) {
+    .wrapper{
+        padding: 0 10px;
+    }
+    .intro{
+        height: 66vh;
+    }
+    .about__conteiner{
+        padding:  90px 0px 90px 0px;
+    }
+
+    .expertise__title{
+        padding-top: 90px;
+    }
+    .intro__ico-scrol{
+        display: none;
+    }
+    .features__conteiner{
+        grid-column: span 12;
+    }
+    .features__inner{
+        grid-column: span 12;
+    }
+
+    .features__wrapper{
+        padding: 90px 10px 90px 10px;
+    }
+
+    .portfolio__wrapper{
+        padding: 80px 10px 80px 10px;
+    }
+
+    .statistics__cards{
+        padding: 100px 0;
+    }
+    .slider__item{
+        padding: 90px 0 ;
+    }
+
+    .team__title{
+        padding: 90px 0;
+    }
+
+    .team__items{
+        padding-bottom: 90px;
+    }
+
+    .pricing__title{
+        padding: 90px 0;
+    }
+
+    .pricing__card-rate::before{
+        left: 15%;
+    }
+
+    .pricing__cards{
+        padding-bottom: 90px;
+    }
+
+    .contacts__location-map{
+        height: auto;
+        padding: 165px 10px 0 0 ;
+    }
+}
+
+@media  screen and ( max-width: 968px) {
+    .intro__ico-scrol{
+        display: none;
+    }
+
+    .title {
+        font-size: 47px;
+    }
+
+    .porfolio__title {
+        margin-bottom: 50px;
+    }
+
+    .portfolio__wrapper{
+        padding: 50px 10px;
+    }
+    .portfolio__wrapper{
+        text-align: center;
+    }
+
+    .portfolio__nav{
+        
+    }
+
+    .portfolio__items{
+        grid-gap: 10px;
+    }
+
+    .video{
+        padding: 0 10px;
+    }
+
+    .video__quotes{
+        padding-top: 110px;
+    }
+
+    .quotes__quotes-autor{
+        padding-bottom: 110px;
+    }
+
+    .tatistics__result{
+        font-size: 48px;
+    }
+
+    .slider .slick-dots{
+        padding-bottom: 50px;
+    }
+
+    .pricing__card-rate::before{
+        left: 5%;
+    }
+
+    .contacts__location-map{
+        padding-top: 230px;
+    }
+    .contacts__title{
+        font-size: 45px;
+    }
+
+    .pricing__card-rate{
+        font-size: 70px;
+    }
+}
