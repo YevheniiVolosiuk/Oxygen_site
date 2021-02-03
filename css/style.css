@@ -1245,3 +1245,163 @@ img{
         font-size: 70px;
     }
 }
+
+
+@media  screen and ( max-width: 767px) {
+
+    .title{
+        font-size: 38px;
+    }
+
+    .header__logo-link{
+        margin: 0 0 0 85px;
+    }
+    .header__item{
+        margin: 20px 0 0 20px ;
+    }
+    .inrto__title{
+        padding-top: 224px;
+        font-size: 40px;
+    }
+
+    .intro__subtitle{
+        margin: 0;
+    }
+
+    .about__conteiner{
+        grid-template-columns: repeat(6,1fr);
+        padding-top: 30px;
+    }
+
+    .about__title{
+        grid-column: span 6;
+        margin-bottom: 30px;
+    }
+
+    .about__subtitle{
+        grid-column: span 6;
+    }
+
+    .expertise__title{
+        padding: 50px 0 0 0;
+        margin: 0 0 50px 0;
+    }
+
+    .expertise__content{
+        grid-template-columns: repeat(6,1fr);
+        column-gap: 0;
+        row-gap: 30px;
+    }
+
+    .expertise__content-items{
+        grid-column: span 6;
+        justify-content: center;
+    }
+
+    .expertise__text{
+        grid-column: span 6;
+        line-height: 24px;
+    }
+
+    .expertise__items{
+        grid-template-columns: repeat(6,1fr);
+
+    }
+
+    .expertise__item{
+        grid-column: span 6;
+        padding: 40px 0 40px 0;
+    }
+
+    .features__wrapper{
+        padding: 50px 10px 50px 10px;
+        margin-bottom: 50px;
+    }
+
+    .features{
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    .features__conteiner{
+        grid-column: span 6;
+    }
+
+    .features__inner{
+        grid-column: span 6;
+    }
+    .portfolio__wrapper{
+        padding: 0 10px 50px 10px;
+    }
+
+    .portfolio__item{
+        margin:0 0 0 25px;
+    }
+
+    .portfolio__items{
+        display: flex;
+        flex-direction: column;
+           
+    }
+
+    .portfolio__img{
+        height: 300px; 
+    }
+    
+    .statistics__card{
+        grid-column: span 6;
+    }
+
+    .statistics__cards{
+        padding: 50px 0 50px 0;
+        row-gap: 30px
+        ;
+    }
+
+    .slider{
+        display: none;
+    }
+
+    .team__title{
+        padding: 50px 0 50px 0;
+    }
+
+    .team__items{
+        grid-template-columns: repeat(6,1fr);
+        column-gap: 0;
+        row-gap: 30px;
+    }
+    .team__item{
+        grid-column: span 6;
+    }
+
+    .pricing__title{
+        padding: 50px 0 50px 0;
+    }
+
+    .pricing__cards{
+        grid-template-columns: repeat(6,1fr);
+        row-gap: 30px;
+    }
+
+    .pricing__card{
+        grid-column: span 6;
+    }
+
+    .pricing__card-item{
+        margin-top: 23px;
+    }
+    .contacts{
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    .contacts__location-map{
+        padding: 50px 10px;
+    }
+    .contacts__wrapper{
+        padding: 50px 10px;
+    }
+
+    .footer__content{
+        padding-top: 50px;
+    }
+}
